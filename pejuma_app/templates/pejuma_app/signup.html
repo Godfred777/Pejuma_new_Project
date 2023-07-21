@@ -1,0 +1,301 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+ body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: left;
+  border-radius: 0px;
+  overflow: hidden;
+  display: flex;
+  height: fit-content;
+}
+
+.left-section {
+  float: right;
+  width: 50%;
+  padding: 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 10px;
+  height: 600px;
+  flex: 1;
+}
+
+.right-section {
+  float: left;
+  width: 50%;
+  position: relative;
+  background-image: url(image/marketing.jpg);
+  background-size: 130% 98%;
+  background-repeat: no-repeat;
+  background-color: white;
+  height: 600px;
+  padding: 30px;
+  border-radius: 10px;
+  flex: 1;
+}
+
+h1 {
+  text-align: left;
+  font-weight: bold;
+  font-style: normal;
+  opacity: 0.7;
+  margin-top: 1px;
+}
+
+p {
+  text-align: center;
+  font-weight: 500;
+  opacity: 5;
+  margin-top: 0px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="confirm-password"] {
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: #041563;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.center-text {
+  text-align: center;
+  padding: 10px;
+}
+
+.login-link {
+  color: #041563;
+  text-decoration: none;
+}
+
+.eye-button {
+  padding-right: 1px;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+.eye-button .eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+.eye-button .icon {
+  position: absolute;
+  top: 5px;
+  right: 1px;
+  transform: translateY(-90%);
+  width: 20px;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  width: 35%;
+  z-index: 1;
+}
+
+.left-section-footer {
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 40%;
+  margin-top: 0%;
+  float: right;
+}
+
+.left-section-footer1 {
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 40%;
+  float: left;
+  margin-top: 0%;
+}
+
+footer {
+  background-color: white;
+  padding: 20px;
+  padding-top: 10px;
+  text-align: center;
+  color: black;
+  margin-bottom: 0px;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 0px;
+}
+
+footer ul li a {
+  color: #041563;
+  text-decoration: none;
+  margin-top: 0px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.social-links a {
+      color: #041563;
+      margin: 0 10px;
+      font-size: 20px;
+      text-decoration: none;
+      margin-top: .5px;
+    }
+
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    function togglePasswordVisibility(icon) {
+      var input = icon.previousElementSibling;
+      if (input.type === "password") {
+        input.type = "text";
+        icon.innerHTML = '<img src="image/eyeslash.png" style="width: 20px;">';
+      } 
+      else {
+        input.type = "password";
+        icon.innerHTML = '<img src="image/eye.png" style="width: 20px;">';
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="clearfix">
+    <div class="container">
+      <div class="right-section">
+           <div style="clear: both;">
+            <a href="Landingpage.html">
+              <img class="logo" src="{% static 'pejuma_app/Logo.png' %}">
+            </a>
+          </div>
+      </div>
+      <div class="left-section">
+        <h1>Let's sign you up!</h1>
+      <p><strong>Get Registered with Us</strong></p>
+        <form method="POST">
+          {% csrf_token %}
+          {{ form.non_field_errors }}
+            <div class="FieldWrapper">
+              {{ form.username.errors }}
+              {{ form.username.label_tag }}
+              {{ form.username }}
+            </div>
+
+           <div class="FieldWrapper">
+              {{ form.email.errors }}
+              {{ form.email.label_tag }}
+              {{ form.email }}
+            </div>
+
+            <div class="eye-button">
+              <div class="FieldWrapper">
+                {{ form.password1.errors }}
+                {{ form.password1.label_tag }}
+                {{ form.password1 }}
+              </div>
+              <span class="eye-icon" name="confirm-password" onclick="togglePasswordVisibility(this)">
+                <img class="icon" src="{% static 'pejuma_app/eye.png' %}">
+              </span>
+            </div>
+    
+            <div class="eye-button">
+              <div class="FieldWrapper">
+                {{ form.password2.errors }}
+                {{ form.password2.label_tag }}
+                {{ form.password2 }}
+              </div>
+             <span class="eye-icon" onclick="togglePasswordVisibility(this)">
+              <img class="icon" src="{% static 'pejuma_app/eye.png' %}">
+            </div>
+            
+            <p class="center-text">By registering, you accept our
+            <a href="#" class="link">Terms</a> and 
+            <a href="#" class="link">Privacy Policiy</a>
+    
+            <input type="submit" value="Sign up free">
+            <p class="center-text">Already have an account? 
+            <a href="SignIn.html" class="login-link">Log in</a> or continue with</p>
+    
+            <a href="#" class="left-section-footer">
+              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="logo" width="20" height="20"> Facebook
+              </a>
+              <a href="#" class="left-section-footer1">
+              <img src="https://img.freepik.com/free-icon/google_318-278809.jpg" alt="logo" width="20" height="20"> Google
+            </a>
+        </form>
+      </div>
+    </div>
+  </header>
+  <footer class="clearfix">
+    <nav class="null-bar">
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="Terms&Condition.html">Terms of Service</a></li>
+        <li><a href="contactUs.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2023 pejuma. All rights reserved.</p>
+    <div class="social-links">
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </div>
+      </div>
+  </footer>
+</body>
+</html>

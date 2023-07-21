@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0% auto;
+      background-image: url(image/p.jpg);
+      background-size: 75%, 0%;
+      background-repeat: no-repeat;
+      background-position: left;
+      box-shadow: 1 0 px rgba(0, 0, 0, 0.1);
+      border-radius: 100px;
+      overflow: hidden
+    }
+
+    .right-section {
+      float: right;
+      width: 50%;
+      padding: 30px;
+      background-color: white;
+      position: right;
+  
+      border-radius: 0px;
+      height: 600px;
+
+    }
+
+    h1 {
+      text-align: left;
+      font-weight: bolder;
+      font-style: normal;
+      opacity: .7;
+    }
+    p {
+      text-align: center;
+      font-weight: 500;
+      margin-bottom: auto;
+      opacity: 5;
+    }
+ 
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="confirm-password"] {
+      width: 500px;
+      padding: 15px;
+      margin-top: 25px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    input[type="submit"] {
+      width: 100%;
+      padding: 15px;
+      margin-top: 25px;
+      background-color: #041563;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .center-text {
+      text-align: center;
+      align-content: center;
+      padding: 0px;
+     
+    }
+    .login-link {
+      color: #041563;
+      text-decoration: none;
+    }
+  
+    .eye-button {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      user-select: none;
+    }
+    .eye-button .password-input {
+      padding-right: 25px;
+      width: 100%x;
+    }
+    .eye-button .eye-icon {
+      position: absolute;
+      top: 48px;
+      left: 470px;
+      transform: translateY(-50%);
+      font-size: 18px;
+      color: #999;
+    }
+    .logo {
+          position: absolute;
+          top: 15px;
+          left: 150px;
+          width: 15%;
+          border-top: 1x solid;         
+        }
+        .right-section-footer button {
+          border: none;
+          cursor: pointer;
+          padding: 10%;
+        }
+       
+        .right-section-footer {
+          flex: 6;
+          gap: 5px;
+          border: 1px solid black;
+          border-radius: 10px;
+          justify-content: center;
+          display: flex;
+          align-items: center;
+          color: black;
+          text-decoration: none;
+          padding: 10px;
+          cursor: pointer;
+          width: 40%;
+          float: left;
+          margin-top: 5%;
+        }
+        .right-section-footer1 {
+          flex: 6;
+          gap: 5px;
+          border: 1px solid black;
+          border-radius: 10px;
+          justify-content: center;
+          display: flex;
+          align-items: center;
+          color: black;
+          text-decoration: none;
+          padding: 10px;
+          cursor: pointer;
+          width: 40%;
+          float: right;
+          margin-top: 5%;
+
+        }
+    footer {
+      background-color: white;
+      padding: 0px;
+      text-align: center;
+      width: 950px;
+      left: 170px;
+      color: black;
+      top: 650px;
+      margin-top: 20%;
+      overflow: hidden;      
+    }
+
+    footer ul {
+      list-style: none;
+      margin: 20px;
+      padding: 0px;
+   }
+
+    footer ul li {
+      display: inline-block;
+      margin-left: 50px;
+      
+    }
+
+    footer ul li a {
+      color: #041563;
+      text-decoration: none;
+    }
+        .clearfix::after {
+         content: "";
+         display: table;
+         clear: both;
+        }
+    
+  </style>
+  <script>
+    
+    function togglePasswordVisibility(icon) {
+      var input = icon.previousElementSibling;
+      if (input.type === "password") {
+        input.type = "text";
+        icon.innerHTML = "👁️";
+      } 
+      else {
+        input.type = "password";
+        icon.innerHTML = "👁";
+      }
+    }
+</script>
+   </head>
+   <body>
+  <header class="clearfix">
+    <div class="container">
+    <div class="right-section">
+      <h1>Let's sign you up!</h1>
+      <p><strong>Get Registered with Us</strong></p>
+      <form action="signup.php" method="POST">
+        <input type="text" placeholder="Full name" required>
+        <input type="email" placeholder="Email or phone number" required>
+
+        <div>
+          <input type="password" placeholder="Password" required>
+          <span class="eye-icon" onclick="togglePasswordVisibility(this)">👁</span>
+        </div>
+
+       <div>
+         <input type="password" placeholder="Confirm Password" required>
+          <span class="eye-icon" onclick="togglePasswordVisibility(this)">👁</span>
+        </div>
+        
+        <p class="center-text">By registering, you accept our
+        <a href="#" class="link">Terms of Service</a> and 
+        <a href="#" class="link">Privacy Policiy</a></label>
+
+        <input type="submit" value="Sign up free">
+        <p class="center-text">Already have an account? <a href="SignIn.html" class="login-link">Log in</a> or continue with</p>
+
+        <a href="#" class="right-section-footer">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="logo" width="20" height="20"> Facebook
+          </a>
+          <a href="#" class="right-section-footer1">
+          <img src="https://img.freepik.com/free-icon/google_318-278809.jpg" alt="logo" width="20" height="20"> Google
+        </a>
+      </form>
+    </div>
+
+    
+   <div class="left-section">
+    <div style="clear: both;">
+      <a href="Landingpage.html">
+      <img class="logo" src="image/Logo.png">
+      </a>
+    </div>
+   </div>
+  </header>
+  <footer class="clearfix">
+    <nav class="null-bar">
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="contactUs.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2023 pejuma. All rights reserved.</p>
+  </footer>
+</body>
+</html>

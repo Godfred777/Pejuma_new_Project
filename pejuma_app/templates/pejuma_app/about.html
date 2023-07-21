@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #222222;
+      color: #fff;
+      padding: 10px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+    }
+  
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      text-decoration: none;
+      position: absolute;
+      position: absolute;
+      top: 8px;
+      left: 55px;
+      width: 12%;
+    }
+
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+    }
+    .nav-menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-menu li {
+      margin-right: 20px;
+      
+    }
+    .nav-menu li:last-child {
+      margin-right: 30px;
+    }
+
+    .nav-menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      opacity: .7;
+    }
+   
+    .nav-button {
+    flex: 6;
+    border: 0px solid;
+    cursor: pointer;
+    padding: 10px;
+    background: #041563;
+    border-radius: 10px;
+    }
+    .mid-nav {
+      display: flex;
+      text-decoration: none;
+      list-style-type: none;
+    }
+    .mid-nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      gap: 3;
+      opacity: .7;
+    }
+    .mid-nav li {
+      margin-left: 20px;
+    }
+    .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 10;
+}
+.dropdown-content a:hover {
+  background-color: #041563 ;
+  color: #fff;
+}
+
+.dropbtn::after {
+  content: "";
+  display: inline-block;
+  width: 0.3em;
+  height: 0.3em;
+  border-bottom: 0.2em solid white;
+  border-right: 0.2em solid white;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  left: 65px;
+  transform: translateY(-50%) rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+.dropdown:hover .dropbtn::after {
+  transform: translateY(-50%) rotate(-135deg);
+ }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 50%;
+
+    
+    }
+    footer li {
+      text-align: center;
+      display: inline-block;
+      text-decoration: none;
+      margin: 5%;
+      margin-top: 0%;
+      margin-bottom: 0%;
+    }
+    footer li a {
+      color: #f5f5f5;
+      text-decoration: none;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .social-links a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 20px;
+      text-decoration: none;
+      margin-top: 20px;
+    } 
+    p {
+      margin-left: 5%;
+    }   
+</style>
+
+<body>
+  <header>
+    <div class="container">
+        <nav class="nav-bar">
+          <img class="logo" src=""></a>
+           
+          </ul>
+            <div class="mid-nav">
+              <li><a href="Landingpage.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contactUs.html">Contact Us</a></li>
+            </div>
+            <ul class="nav-menu">
+             <li><a href="SignIn.html">Login</a></li>
+             <li class="dropdown">
+              <a href="#" class="dropbtn">Register</a>
+              <div class="dropdown-content">
+                <a href="signUp.html">Artisan</a>
+                <a href="signUp.html">Customer</a>
+              </div>
+            </li>
+          </ul>
+        </nav >
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <div>
+        <h2>About Us</h2>
+        <p>Hi,</p>
+        <p>I am Balascoza and I welcome you the official website of pejuma, your Service finder.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="Terms&Condition.html">Terms of Service</a></li>
+          <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+        <p>&copy; 2023 pejuma.com All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </div>
+      </div>
+  </footer>
+</body>
+
+</html>

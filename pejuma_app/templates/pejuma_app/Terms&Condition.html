@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+</head>
+
+<style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #222222;
+      color: #fff;
+      padding: 10px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+    }
+  
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      text-decoration: none;
+      position: absolute;
+      position: absolute;
+      top: 8px;
+      left: 55px;
+      width: 12%;
+    }
+
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+    }
+    .nav-menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-menu li {
+      margin-right: 20px;
+      
+    }
+    .nav-menu li:last-child {
+      margin-right: 30px;
+    }
+
+    .nav-menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      opacity: .7;
+    }
+   
+    .nav-button {
+    flex: 6;
+    border: 0px solid;
+    cursor: pointer;
+    padding: 10px;
+    background: #041563;
+    border-radius: 10px;
+    }
+    .mid-nav {
+      display: flex;
+      text-decoration: none;
+      list-style-type: none;
+    }
+    .mid-nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      gap: 3;
+      opacity: .7;
+    }
+    .mid-nav li {
+      margin-left: 20px;
+    }
+    .dropdown {
+  position: relative;
+  display: inline-block;
+ }
+
+ .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  
+ }
+
+ .dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+ }
+
+ .dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 10;
+ }
+ .dropdown-content a:hover {
+  background-color: #041563 ;
+  color: #fff;
+ }
+
+ .dropbtn::after {
+  content: "";
+  display: inline-block;
+  width: 0.3em;
+  height: 0.3em;
+  border-bottom: 0.2em solid white;
+  border-right: 0.2em solid white;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  left: 65px;
+  transform: translateY(-50%) rotate(45deg);
+  transition: transform 0.3s ease;
+ }
+
+ .dropdown:hover .dropbtn::after {
+  transform: translateY(-50%) rotate(-135deg);
+ }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 50%;
+
+    
+    }
+    footer li {
+      text-align: center;
+      display: inline-block;
+      text-decoration: none;
+      margin: 5%;
+      margin-top: 0%;
+      margin-bottom: 0%;
+    }
+    footer li a {
+      color: #f5f5f5;
+      text-decoration: none;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .social-links a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 20px;
+      text-decoration: none;
+      margin-top: 20px;
+    } 
+    p {
+      margin-left: 3%;
+      margin-top: .5%;
+    } 
+    h1 {
+      margin-left: 3%;
+      font-weight: bolder;
+    }
+    h2 {
+      margin-left: 3%;
+      font-weight: lighter;
+      font-style: normal;
+      margin-top: 5%;
+      color: #041563;
+    } 
+    .container1 {
+      width: 750px;
+      margin-top: 5%;
+      margin-left: 3%;
+      text-align: justify;
+    }
+    li {
+      margin-left: 3%;
+    } 
+</style>
+
+<body>
+  <header>
+    <div class="container">
+        <nav class="nav-bar">
+          <img class="logo" src=""></a>
+           
+          </ul>
+            <div class="mid-nav">
+              <li><a href="Landingpage.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contactUs.html">Contact Us</a></li>
+            </div>
+            <ul class="nav-menu">
+             <li><a href="SignIn.html">Login</a></li>
+             <li class="dropdown">
+              <a href="#" class="dropbtn">Register</a>
+              <div class="dropdown-content">
+                <a href="signUp.html">Artisan</a>
+                <a href="signUp.html">Customer</a>
+              </div>
+            </li>
+          </ul>
+        </nav >
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container1">
+        
+        <h1>TERMS AND CONDITIONS</h1>
+        <h2>Our acceptance of these Term of use</h2>
+        <p>These Terms of Use apply to all users of this portal. By using this portal, you are agreeing to comply with and be bound by these Terms of Use. If you do not agree to these Terms of Use, you may not access or use this portal.</p>
+        <h2>Your acceptance of our privacy policy</h2>
+        <p>By agreeing to these terms of use, you agree to the terms of our privacy policy, which is expressly incorporated herein. Before using this portal, please carefully review our privacy policy. All information provided to us as a result of your use of this portal will be handled in accordance with our privacy policy. To the extent there are inconsistencies between these terms of use and our privacy policy, these terms of use control.</p>
+        <h2>Your consent to other agreements</h2>
+        <p>When you sign up to use a special feature of this portal, you may be asked to agree to special terms governing your use of the special feature. In such cases, you may be asked to expressly consent to the special terms, for example, by checking a box or clicking on a button marked “i agree.” This type of agreement is known as a “click-through” agreement. If any of the terms of the click-through agreement are different than the terms of these terms of use, the terms of the click-through agreement will supplement or amend this these terms of use, but only with respect to the matters governed by the “click-through agreement.”</p>
+        <h2>Ownership of this portal and its content</h2>
+        <p>This portal, including all its content are protected under applicable intellectual property and other laws, including without limitation the laws of ghana. All content and intellectual property rights therein are the property of peopleware ghana or the material is included with the permission of the rights owner and is protected pursuant to applicable copyright and trademark laws.</p>
+        <p>The presence of any content on this portal does not constitute a waiver of any right in such content. You do not acquire ownership rights to any such content viewed through this portal. Except as otherwise provided herein, none of this content may be used, copied, reproduced, distributed, republished, downloaded, modified, displayed, posted or transmitted in any form or by any means, including, but not limited to, electronic, mechanical, photocopying, recording, or otherwise, without our express prior written permission.</p>
+        <p>Permission is hereby granted to the extent necessary to lawfully access and use this portal and to display, download, or print portions of this portal on a temporary basis and for your personal, educational, non commercial use only, provided that you (i) do not modify the content; (ii) you retain any and all copyright and other proprietary notices contained in the content; and (iii) you do not copy or post the content on any network computer or broadcast the content in any media.</p>
+        <h2>Trademarks</h2>
+        <p>Peopleware names and logos (including, but not limited to, pejuma and all 3rd party, all product and service names, all graphics, all button icons, and all trademarks, service marks and logos appearing within this portal, unless otherwise noted, are trademarks (whether registered or not), service marks and/or trade dress of peopleware (“peopleware marks”). All other trademarks, product names, company names, logos, service marks and/or trade dress mentioned, displayed, cited or otherwise indicated within this portal are the property of their respective owners. You are not authorized to display or use peopleare marks in any manner without our prior written permission. You are not authorized to display or use trademarks, product names, company names, logos, service marks and/or trade dress of other owners featured within this portal without the prior written permission of such owners. The use or misuse of poeplware marks or other trademarks, product names, company names, logos, service marks and/or trade dress or any other materials contained herein, except as permitted herein, is expressly prohibited.</p>
+        <h2>Responsibility for user-generated content posted on or through this site</h2>
+        <p>You are responsible for user-generated content that you post. Under no circumstances will we be liable in any way for any ugc.</p>
+        <p>This means that you, not peoplware, are entirely responsible for all ugc that you post and that you can be held personally liable for comments that are defamatory, obscene, or libelous, or that violate these terms of use, an obligation of confidentiality, or the rights of others. If any part of the ugc you post is not your original work, it is your responsibility to obtain any necessary permission to post it.</p>
+        <p>Because we do not control the ugc posted on or through this portal, we cannot and do not warrant or guarantee the truthfulness, integrity, suitability, or quality of that ugc. You also agree and understand that by accessing this portal, you may encounter ugc that you may consider to be objectionable. We have no responsibility for any ugc, including without limitation any errors or omissions therein. We are not liable for any loss or damage of any kind you may claim was incurred as a result of the use of any ugc posted, emailed, transmitted or otherwise made available on or through this portal. The ugc posted on or through this portal expresses the personal opinions of the individuals who posted it and does not necessarily reflect the views of peopleware or any person or entity associated with peopleware.</p>
+        <p>You own user-generated content, but we may use it. You own the copyright in any original ugc you post. We do not claim any copyrights in ugc. However, by using this portal you are granting us and our subsidiaries, affiliates, successors and assigns, a nonexclusive, fully paid, worldwide, perpetual, irrevocable, royalty-free, transferable license (with the right to sublicense through unlimited levels of sub licensees) to use, copy, modify, distribute, publicly display and perform, publish, transmit, remove, retain repurpose, and commercialize ugc you post in any and all media or form of communication whether now existing or hereafter developed, without obtaining additional consent, without restriction, notification, or attribution, and without compensating you in any way, and to authorize others to do the same. For this reason, we ask that you not post any ugc that you do not wish to license to us, including any photographs, videos, confidential information, or product ideas.</p>
+        <p>We may disclose and/or remove user-generated content. Peopleware has certain rights. We have the right (but do not assume the obligation) to:
+          <li>Monitor all ugc;</li> 
+          <li> Require that you avoid certain subjects;</li>
+          <li> Remove or block any ugc at any time without notice at our sole and absolute discretion;
+          <li> Disclose any ugc and the identity of the user who posted it in response to a subpoena or whenever we believe that disclosure is appropriate to comply with the law or a court order, to prevent or investigate a possible crime or other violation of law, to protect the rights of peopleware or others, or to enforce these terms of use; and </li>
+          <li> Terminate your access to and use of this site, or to modify, edit or block your transmissions thereto in our sole discretion.</li>  
+        <p>
+        <p>You agree that our exercise of such discretion shall not render us the owners of ugc you post, and that you will retain ownership thereof as described above.</p>
+        <p>Restrictions on user-generated content. It is a condition of these terms of use that you do not:</p>  
+        <li>Upload, post, transmit or otherwise make available
+          <ul> - Any ugc that is unlawful, harmful, hateful, threatening, abusive, harassing, libelous, defamatory, obscene, vulgar, pornographic, profane, racially disparaging, indecent, or invasive of another’s privacy;</ul>
+          <ul> - Any ugc that constitutes or encourages activity illegal under criminal or civil law;</ul>
+          <ul> - Any ugc that is false, misleading, or fraudulent;</ul>
+          <ul> - Any ugc that you do not have a right to make available under any law or under contractual or fiduciary relationships (such as inside information or proprietary and confidential information learned or disclosed as part of employment relationships or under nondisclosure agreements);</ul>
+          <ul> - Any ugc that violates or infringes upon the rights of others, including ugc which violates the patent rights, copyrights, trademark rights, privacy rights, publicity rights, trade secret rights, confidentiality rights, contract rights, or any other rights of any individual, living or deceased, or any legal entity;</ul>
+          <ul> - Any ugc that contains the image, name or likeness of anyone other than yourself, unless (i) that person is at least eighteen years old and you have first obtained his/her express permission or (ii) that person is under eighteen years old but you are his/her parent or legal guardian;</ul>
+          <ul> - Any request for or solicitation of any personal or private information from any individual;</ul>
+          <ul> - Any request for or solicitation of money, goods, or services for private gain;</ul>
+          <ul> - Any material that contains software viruses or any other computer code, files or programs designed to interrupt, destroy or limit the functionality of any computer software or hardware or telecommunications equipment; or</ul>
+          <ul> - Any ugc that contains advertising, promotions or marketing, or which otherwise has a commercial purpose;</ul>
+        </li>
+        <li>Impersonate any person or entity or falsely state or otherwise misrepresent your affiliation with a person or entity; or</li>
+        <li>Violate any local, state, national or international law, rule or regulation.</li>
+      <p>By posting user-generated content, you represent and warrant that (i) you own or otherwise control all of the rights to the ugc and have the right to grant the license set forth in these terms of use; (ii) the ugc is accurate, and (iii) you have read and understood—and your ugc fully complies with—these terms of use and applicable laws and will not cause injury to any person or entity.</p>
+      <h2>Removal of content</h2>
+      <p>In general, you can seek removal of objectionable ugc by contacting us using the information provided below. We will review all such requests and will remove ugc that we determine should be removed, in our sole discretion and in accordance with these terms of use and applicable law. Please be aware, however, that if the ugc has already been distributed to other websites or published in other media, we will not be able to recapture and delete it. Also, a back-up or residual copy of the ugc we remove from this portal may remain on back-up servers.</p>
+      <p>Violation of copyrights. Peopleware does not knowingly violate or permit others to violate the copyrights of others. We will promptly remove or disable access to material that we know is infringing or if we become aware of circumstances from which infringing activity is apparent.</p>
+      <p>If you are requesting removal of content because of a violation of your copyrights, please note that the digital millennium copyright act of 1998 (the “dmca”) provides recourse for copyright owners who believe that material appearing on the internet infringes their rights under the copyright law. If you believe that your own work, or the work of a third party for whom you are authorized to act, is featured on this portal or has been otherwise copied and made available on this portal in a manner that constitute copyright infringement, please notify us immediately. Your notice must be in writing and must include</p>
+       <li>An electronic or physical signature of the copyright owner or of the person authorized to act on behalf of the owner of the copyright interest;</li>
+       <li>A description of the copyrighted work that you claim has been infringed;</li>
+       <li>A description of where the material that you claim is infringing is located on this portal (including the url, title and/or item number if applicable, or other identifying characteristics);</li>
+       <li>Your name, address, telephone number, and email address, and, if you are not the owner of the copyright, the name of the owner; and</li>
+       <li>A written statement by you that you have a good-faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law; and</li>
+       <li>A statement by you, made under penalty of perjury, that the above information in your notice is accurate and that you are the copyright owner or authorized to act on the copyright owner's behalf.</li>
+      <p>Your statement must be sent to: ……………………………………………</p>
+      <p>Any notification by a copyright owner or a person authorized to act on its behalf that fails to comply with requirements of the data protection and copyright act shall not be considered sufficient notice and shall not be deemed to confer upon us actual knowledge of facts or circumstances from which infringing material or acts are evident.</p>
+      <h2>Your feedback</h2>
+      <p>Although we do not claim ownership of user-generated content you post using this portal, the feedback you provide to us through this portal will be and remain our exclusive property. Your submission of feedback will constitute an assignment to us of all worldwide rights, title and interests in your feedback, including all copyrights and other intellectual property rights in your feedback. We will be entitled to reduce to practice, exploit, make, use, copy, disclose, display or perform publicly, distribute, improve and modify any feedback you submit for any purpose whatsoever, without restriction and without compensating you in any way. For this reason, we ask that you not send us any feedback that you do not wish to assign to us.</p>
+      <h2>Your obligations</h2>
+      <p>In consideration of your use of this portal, you agree that to the extent you provide personal information to it will be true, accurate, current, and complete and that you will update all personal information as necessary.</p>
+      <p>To the extent you create an account through this portal, you understand and agree that any account you create, including your username and password, are personal to you and may not be used by anyone else. You are responsible for maintaining the confidentiality of your username and password and are fully responsible for all activities that occur under your username and password by you or by anyone else using your username and password, whether or not authorized by you. You agree to change your password immediately if you believe your password may have been compromised or used without authorization. You also agree to immediately inform us of any apparent breaches of security such as loss, theft or unauthorized disclosure or use of your username or password by contacting us using the information provided below. Until we are so notified you will remain liable for any unauthorized use of your account.</p>
+      <p>You agree to use this portal in a manner consistent with any and all applicable rules and regulations. You agree not to upload or transmit through this portal any computer viruses, trojan horses, worms or anything else designed to interfere with, interrupt or disrupt the normal operating procedures of a computer. Any unauthorized modification, tampering or change of any information, or any interference with the availability of or access to this portal is strictly prohibited. We reserve all rights and remedies available to us.</p>
+      <h2>Disclaimers</h2>
+      <p>We make no representations or warranties with respect to this portal or its content, or any product or service available on or promoted through this portal. This site and all of its content (including user-generated content) are provided on an “as is,” “as available” basis, without representations or warranties of any kind. To the fullest extent permitted by law, peopleware and affiliates, and their service providers and licensors disclaim any and all representations and warranties, whether express, implied, arising by statute, custom, course of dealing, course of performance or in any other way, with respect to this site, its content, and any products or services available or promoted through this portal. Without limiting the generality of the foregoing, peopleware, its affiliates, and their service providers and licensors disclaim all representations and warranties (a) of title, non-infringement, merchantability and fitness for a particular purpose; (b) relating to the security of this portal; (c) that the content of this portal is accurate, complete or current; or (d) that this portal will operate securely or without interruption or error.</p>
+      <p>We do not represent or warrant that this portal, its servers, or any transmissions sent from us or through this portal will be free of any harmful components (including viruses).</p>
+      <p>Peopleware does not endorse and is not responsible for statements, advice and opinions made by anyone other than authorized peopleware spokespersons. We do not endorse and are not responsible for any statements, advice or opinions contained in user-generated content and such statements, advice and opinions do not in any way reflect the statements, advice and opinions of peopleware. We do not make any representations or warranties against the possibility of deletion, misdelivery or failure to store communications, personalized settings, or other data. You accept that our shareholders, owners, officers, directors, employees and other representatives shall have the benefit of this clause.</p>
+      <p>Applicable law may not allow the limitation of certain warranties, so all or part of this disclaimer of warranties may not apply to you.</p>
+      <h2>Limitation of liability</h2>
+      <p>To the fullest extent permitted by applicable laws we, on behalf of our directors, officers, employees, agents, suppliers, licensors and service providers, exclude and disclaim liability for any losses and expenses of whatever nature and howsoever arising including, without limitation, any direct, indirect, general, special, punitive, incidental or consequential damages; loss of use; loss of data; loss caused by a virus; loss of income or profit; loss of or damage to property; claims of third parties; or other losses of any kind or character, even if we have been advised of the possibility of such damages or losses, arising out of or in connection with the use of this portal. You assume total responsibility for establishing such procedures for data back up and virus checking as you consider necessary. This limitation of liability applies whether the alleged liability is based on contract, tort (including negligence), strict liability or any other basis.</p>
+      <p>If any part of this limitation on liability is found to be invalid or unenforceable for any reason, then the aggregate liability of the released parties for liabilities that otherwise would have been limited shall not exceed ten dollars (ghc100).</p>
+      <p>This site gives you specific legal rights and you may also have other rights which vary from country to country. Some jurisdictions do not allow certain kinds of limitations or exclusions of liability, so the limitations and exclusions set out in these terms of use may not apply to you. Other jurisdictions allow limitations and exclusions subject to certain conditions. In such a case the limitations and exclusions set out in these terms of use shall apply to the fullest extent permitted by the laws of such applicable jurisdictions. Your statutory rights as a consumer, if any, are not affected by these provisions, and we do not seek to exclude or limit liability for fraudulent misrepresentation.</p>
+      <h2>Links to third-party websites</h2>
+      <p>This portal may provide links to other websites operated by third parties (i.e. Social media websites, vendor pages, websites of other corporations, limited liability companies, etc.). Because we have no control over third-party websites, we are not responsible for the availability of those websites and do not endorse and are not responsible or liable for any content, advertising, services, products, or other materials on or available from such websites. Peopleware shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any content, advertising, services, products, or other materials on or available from such websites. These terms of use do not apply to your use of third-party websites; your use of such websites is subject to the terms and policies of the owner of such websites.</p>
+      <h2>Modification and discontinuation</h2>
+      <p>We reserve the right at any time and from time-to-time to modify, edit, delete, suspend or discontinue, temporarily or permanently this portal (or any portion thereof) and/or the information, materials, products and/or services available through this site (or any part thereof) with or without notice. You agree that we shall not be liable to you or to any third party for any such modification, editing, deletion, suspension or discontinuance of this portal.</p>
+      <h2>Waiver</h2>
+      <p>Our failure at any time to require performance of any provision of these terms of use or to exercise any right provided for herein will not be deemed a waiver of such provision or such right. All waivers must be in writing. Unless the written waiver contains an express statement to the contrary, no waiver by of any breach of any provision of these terms of use or of any right provided for herein will be construed as a waiver of any continuing or succeeding breach of such provision, a waiver of the provision itself, or a waiver of any right under these terms of use.</p>
+      <h2>Severability</h2>
+      <p>If any provision of these terms of use is held by a court of competent jurisdiction to be contrary to law, such provision will be changed and interpreted so as to best accomplish the objectives of the original provision to the fullest extent allowed by law and the remaining provisions of these terms of use will remain in full force and effect.</p>
+      <h2>Governing law, jurisdiction and venue</h2>
+      <p>These terms of use will be governed under the laws of the ghana without regard to its conflicts of law provisions. All actions or proceedings arising out of or relating to these terms of use will be venued exclusively in a state court in ghana. You hereby irrevocably consent and submit to the personal jurisdiction of said courts for all such purposes. However, we retain the right to bring legal proceedings in any jurisdiction where we believe that infringement of these terms of use is taking place or originating.</p>
+      <h2>Indemnity</h2>
+      <p>You agree to indemnify, defend and hold harmless peopleware, its subsidiaries and affiliates, and their respective officers, agents, partners and employees, harmless from any loss, liability, claim, or demand, including reasonable attorneys’ fees, made by any third party due to or arising out of your use of this portal in violation of these terms of use and/or arising from a breach of these terms of use and/or any breach of your representations and warranties set forth above and/or if any material that you post using this portal causes us to be liable to another.</p>
+      <p>By installing any third-party application, you are authorizing such third-party application to perform the actions and/or share with the third-party application the information communicated to [peopleware] or requested from [peopleware] to perform the actions and/or share with the third-party application the information communicated to [peopleware], or requested from [peopleware]. Peopleware is going to send that information through the third-party application, which will then go through the internet. [peopleware] shall not be held responsible for any dissemination, use, misuse, and/or disclosure of the user's information through use of this or any third-party application.</p>
+      <h2>These terms of use may change</h2>
+      <p>These terms of use are current as of the effective date set forth above. Peopleware reserves the right to change these terms of use from time to time consistent with applicable laws and principles. These changes will be effective as of the date we post the revised version on this portal. Your continued use of this portal after we have posted the revised terms of use constitutes your agreement to be bound by the revised terms of use. If at any time you choose not to accept these terms of use, you should not use this portal.</p>
+      <h2>Entire agreement</h2>
+      <p>These terms of use (together with our privacy policy and any privacy notices or click-through agreements applicable to you) contain the entire understanding and agreement between you and peopleware with respect to this portal and supersede all previous communications, negotiations, and agreements, whether oral, written, or electronic, between you and peoplware with respect to this portal and your use of this portal.</p>
+      <h2>Definitions</h2>
+      <p>The term “content” refers to all of the software and code comprising or used to operate this portal, and all of the text, photographs, images, illustrations, graphics, sound recordings, video and audio-video clips, and other materials available on this site, including user-generated content and feedback.</p>
+      <p>The terms “peopleware,” “we,” “us,” and “our” refer to peopleware gh. Ltd</p>
+      <p>The term “feedback” refers to all the text, photographs, images, illustrations, graphics, sounds, video and audio-video clips, and other content you post on or through this site that is specifically about how we can improve this portal and the products and services we make available through this portal.</p>
+      <p>The term “including” means “including, but not limited to.”</p>
+      <p>The term “portal” refers to any website or app owned by peopleware on which these terms of use are posted.</p>
+      <p>The term “user-generated content” or “ugc” means all the text, photographs, images, illustrations, graphics, sounds, video and audio-video clips, and other content you post using functionality on this portal that allows you to publicly post that content, communicate with other users, or otherwise engage in social networking activities and that does not constitute “feedback.”</p>
+    </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="Terms&Condition.html">Terms of Service</a></li>
+          <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+        <p>&copy; 2023 pejuma.com All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </div>
+      </div>
+  </footer>
+</body>
+
+</html>
