@@ -213,6 +213,13 @@ footer ul li a {
       }
     }
   </script>
+  {% if messages %}
+    {% for message in messages %}
+    <script>
+      alert("{{ message }}")
+    </script>
+    {% endfor %}
+  {% endif %}
 </head>
 <body>
   <header class="clearfix">
@@ -227,7 +234,7 @@ footer ul li a {
       <div class="left-section">
         <h1>Let's sign you up!</h1>
       <p><strong>Get Registered with Us</strong></p>
-        <form method="POST">
+        <form method="post">
           {% csrf_token %}
           {{ form.non_field_errors }}
             <div class="FieldWrapper">
