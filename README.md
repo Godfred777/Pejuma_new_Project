@@ -1,6 +1,6 @@
 # Pejuma - Connecting Users with Local Artisans
 
-![Pejuma Logo](Pejuma_new_Project/pejuma_app/static/pejuma_app/Logo.png)
+![Pejuma Logo](./pejuma_app/static/pejuma_app/Logo.png)
 
 Pejuma is a platform that facilitates seamless connections between users and skilled artisans offering a diverse range of goods and services within a specific geographical region. Whether you need home services, creative products, or specialized craftsmanship, Pejuma is your go-to platform for finding and hiring talented artisans near you.
 
