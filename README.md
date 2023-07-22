@@ -1,6 +1,6 @@
 # Pejuma - Connecting Users with Local Artisans
 
-![SkillLink Logo](Pejuma_new_Project/pejuma_app/static/pejuma_app/Logo.png)
+![Pejuma Logo](Pejuma_new_Project/pejuma_app/static/pejuma_app/Logo.png)
 
 Pejuma is a platform that facilitates seamless connections between users and skilled artisans offering a diverse range of goods and services within a specific geographical region. Whether you need home services, creative products, or specialized craftsmanship, Pejuma is your go-to platform for finding and hiring talented artisans near you.
 
@@ -39,7 +39,7 @@ Pejuma is a platform that facilitates seamless connections between users and ski
 
 To get started with SkillLink, follow these simple steps:
 
-1. Visit [www.skilllink.com](https://www.skilllink.com) and click on the "Sign Up" button.
+1. Visit [www.pejuma.com](https://www.pejuma.com) and click on the "Sign Up" button.
 2. Provide your basic details and create a secure account.
 3. Confirm your email address and log in to the platform.
 
@@ -109,8 +109,4 @@ This project is licensed under the [MIT License](./LICENSE).
 
 ## Contact Us
 
-If you have any questions, suggestions, or need support, feel free to contact our team at support@skilllink.com or visit our website [www.skilllink.com](https://www.skilllink.com).
-
----
-
-*Note: The information in this README.md file is fictional and provided as a template. Adjust the content to match the specifics of your platform that links users to artisans offering goods and services in a geographical region.*
+If you have any questions, suggestions, or need support, feel free to contact our team at support@skilllink.com or visit our website [www.pejuma.com](https://www.pejuma.com).
