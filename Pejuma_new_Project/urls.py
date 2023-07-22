@@ -16,8 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from pejuma_auth import views as user_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('register/', user_views.signup, name='register'),
     path('', include('pejuma_app.urls')),
 ]

@@ -38,7 +38,7 @@
   float: left;
   width: 50%;
   position: relative;
-  background-image: url(image/marketing.jpg);
+  background-image: url({% static 'pejuma_app/marketing.jpg' %});
   background-size: 130% 98%;
   background-repeat: no-repeat;
   background-color: white;
@@ -285,8 +285,8 @@ footer ul li a {
     <nav class="null-bar">
       <ul>
         <li><a href="#">Privacy Policy</a></li>
-        <li><a href="Terms&Condition.html">Terms of Service</a></li>
-        <li><a href="contactUs.html">Contact Us</a></li>
+        <li><a href="{% url 'pejuma_app-terms' %}">Terms of Service</a></li>
+        <li><a href="{% url 'pejuma_app-contact' %}">Contact Us</a></li>
       </ul>
     </nav>
     <p>&copy; 2023 pejuma. All rights reserved.</p>
