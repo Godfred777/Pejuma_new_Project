@@ -37,7 +37,7 @@ Pejuma is a platform that facilitates seamless connections between users and ski
 
 ### Sign Up
 
-To get started with SkillLink, follow these simple steps:
+To get started with Pejuma, follow these simple steps:
 
 1. Visit [www.pejuma.com](https://www.pejuma.com) and click on the "Sign Up" button.
 2. Provide your basic details and create a secure account.
@@ -93,7 +93,7 @@ Once logged in, you can start browsing local artisans:
 
 ## Security and Trust
 
-At SkillLink, we prioritize the safety and trust of our users:
+At Pejuma, we prioritize the safety and trust of our users:
 
 - **Verification Process**: All artisans go through a verification process to ensure their legitimacy.
 - **Secure Messaging**: Communicate with users and artisans securely through our encrypted messaging system.
