@@ -213,20 +213,13 @@ footer ul li a {
       }
     }
   </script>
-  {% if messages %}
-    {% for message in messages %}
-    <script>
-      alert("{{ message }}")
-    </script>
-    {% endfor %}
-  {% endif %}
 </head>
 <body>
   <header class="clearfix">
     <div class="container">
       <div class="right-section">
            <div style="clear: both;">
-            <a href="Landingpage.html">
+            <a href="{% url 'pejuma_app-home' %}">
               <img class="logo" src="{% static 'pejuma_app/Logo.png' %}">
             </a>
           </div>
@@ -271,7 +264,7 @@ footer ul li a {
             </div>
             
             <p class="center-text">By registering, you accept our
-            <a href="#" class="link">Terms</a> and 
+            <a href="{% url 'pejuma_app-terms' %}" class="link">Terms</a> and 
             <a href="#" class="link">Privacy Policiy</a>
     
             <input type="submit" value="Sign up free">

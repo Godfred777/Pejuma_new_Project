@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,7 +38,7 @@
   float: left;
   width: 50%;
   position: relative;
-  background-image: url(image/marketing.jpg);
+  background-image: url({% static 'pejuma_app/marketing.jpg' %});
   background-size: 130% 90%;
   background-repeat: no-repeat;
   background-color: white;
@@ -222,8 +223,8 @@ footer ul li a {
     <div class="container">
       <div class="right-section">
            <div style="clear: both;">
-            <a href="Landingpage.html">
-              <img class="logo" src="image/Logo.png">
+            <a href="{% url 'pejuma_app-home' %}">
+              <img class="logo" src="{% static 'pejuma_app/Logo.png' %}">
             </a>
           </div>
       </div>
@@ -234,9 +235,9 @@ footer ul li a {
           {% csrf_token %}
           {{ form.non_field_errors }}
           <div class="FieldWrapper">
-            {{ form.email.errors }}
-            {{ form.email.label_tag }}
-            {{ form.email }}
+            {{ form.username.errors }}
+            {{ form.username.label_tag }}
+            {{ form.username }}
           </div>
 
             <div class="eye-button">
@@ -246,7 +247,7 @@ footer ul li a {
                 {{ form.password }}
               </div>
               <span class="eye-icon" onclick="togglePasswordVisibility(this)">
-                <img class="icon" src="image/eye.png" alt="Show Password">
+                <img class="icon" src="{% static 'pejuma_app/eye.png' %}" alt="Show Password">
               </span>
             </div>
 
@@ -254,7 +255,7 @@ footer ul li a {
             <label for="terms">Remember me</label>
     
             <input type="submit" value="Sign in">
-            <p class="center-text">Don't have an account? <a href="signup.html" class="signup-link">Sign up</a> or continue with</p>
+            <p class="center-text">Don't have an account? <a href="{% url 'register' %}" class="signup-link">Sign up</a> or continue with</p>
     
             <a href="#" class="left-section-footer">
               <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="logo" width="20" height="20"> Facebook
@@ -270,8 +271,8 @@ footer ul li a {
     <nav class="null-bar">
       <ul>
         <li><a href="#">Privacy Policy</a></li>
-        <li><a href="Terms&Condition.html">Terms of Service</a></li>
-        <li><a href="contactUs.html">Contact Us</a></li>
+        <li><a href="{% url 'pejuma_app-terms' %}">Terms of Service</a></li>
+        <li><a href="{% url 'pejuma_app-contact' %}">Contact Us</a></li>
       </ul>
     </nav>
     <p>&copy; 2023 pejuma. All rights reserved.</p>
