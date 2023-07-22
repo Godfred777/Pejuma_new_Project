@@ -109,4 +109,4 @@ This project is licensed under the [MIT License](./LICENSE).
 
 ## Contact Us
 
-If you have any questions, suggestions, or need support, feel free to contact our team at support@skilllink.com or visit our website [www.pejuma.com](https://www.pejuma.com).
+If you have any questions, suggestions, or need support, feel free to contact our team at support@pejuma.com or visit our website [www.pejuma.com](https://www.pejuma.com).
